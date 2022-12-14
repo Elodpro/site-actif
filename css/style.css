@@ -1,14 +1,13 @@
 body {
-    background-color: rgb(18, 13, 6);
+    background-color: white;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .dark-mode {
     background-color: black;
     color: white;
 }
-
 
 @keyframes blink {
     0% {
@@ -23,6 +22,8 @@ body {
 }
 
 #darkbutton {
+    position: fixed;
+    top: 10px;
     background: none;
     border: none;
     color: inherit;
@@ -44,4 +45,64 @@ body {
 #darkbutton:hover {
     cursor: pointer;
     animation: blink 1s;
+}
+
+/* Navigation */
+#nav {
+    width: 100%;
+    text-align: center;
+}
+
+#nav ul {
+    text-align: left;
+    display: inline;
+    padding: 15px 4px 17px 0;
+    list-style: none;
+}
+
+#nav ul li {
+    font-weight:bold ;
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+    padding: 15px 20px;
+    background: inherit;
+    cursor: pointer;
+}
+
+#nav ul li:hover {
+    background: #af7a4d;
+    color: #fff;
+}
+
+#nav ul li ul {
+    padding: 0;
+    position: absolute;
+    top: 46px;
+    left: 0;
+    width: 200px;
+    display: none;
+}
+
+#nav ul li ul li {
+    background: #af8951;
+    display: block;
+    color: #fff;
+}
+
+#nav ul li ul li:hover { background: #776b5b; }
+
+#nav ul li:hover ul {
+    display: block;
+}
+
+/* Menu déroulant animation d'ouverture */
+#nav ul li:hover {
+    transform: translateY(5px);
+    transition: all 0.3s ease;
+}
+
+#nav a {
+    text-decoration: none;
+    color: inherit;
 }
