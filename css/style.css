@@ -48,15 +48,22 @@ section {
     cursor: pointer;
 }
 
+#nav ul {
+    list-style-type: none;
+    margin-right: 10px;
+    padding: 0;
+    width: 100px;
+    background-color: inherit;
+}
 #nav ul a {
-    text-align: right;
+    text-align: left;
     display: inline-block;
     padding: 15px 4px 17px 0;
     list-style: none;
 }
 
 #nav ul li:hover {
-    background: #af7a4d;
+    background-color: #af7a4d;
     color: #fff;
 }
 
@@ -64,14 +71,19 @@ section {
 #nav ul li ul {
     padding: 0;
     position: absolute;
-    top: 46px;
-    left: 0;
+    top: 0px;
+        right: 80px;
     width: 200px;
     display: none;
 }
 
+#nav li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
 #nav ul li ul li {
-    background: #af8951;
     display: block;
     color: #fff;
 }
