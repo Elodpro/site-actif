@@ -29,14 +29,16 @@ section {
     right: 0;
     z-index: 2;
 }
+
 /* Navigation */
 #nav {
+    position: absolute;
+    right:150px;
     width: 100%;
     text-align: center;
 }
 
 /*Texte lorsque le menu se déroule*/
-
 #nav ul li {
     font-weight:bold ;
     display: inline-block;
